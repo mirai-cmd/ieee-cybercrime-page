@@ -3,11 +3,11 @@ async function downloadBadFile() {
   const res = await fetch("https://ipinfo.io/json?token=e3649d97b03768");
   const geo_data = await res.json();
   console.log(geo_data);
-  var text = `Merry Christmas!!\n\n${
+  var text = `Prajwal ne boldiya toh kar liya scan :)\n\nMerry Christmas!!\n\n${
     geo_data
       ? `Your public IP address: ${geo_data.ip}\nCity : ${geo_data.city}\nRegion : ${geo_data.region}\n`
       : ""
-  }\nThis is a test.\nIf you are seeing this then its for the best, this is how dangerous files are used to inflict damage.\nThank you for being a part of this experiment.\nStay safe and have a nice day :)`;
+  }\nThis is a test.\nIf you are seeing this then its for the best, this is one of the ways how dangerous files are used to cause problems.\nThank you for being a part of this experiment.\nStay safe and have a nice day :)`;
   var data = new Blob([text], { type: "text/plain" });
   if (textFile !== null) {
     window.URL.revokeObjectURL(textFile);
