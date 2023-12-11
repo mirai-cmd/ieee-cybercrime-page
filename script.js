@@ -14,7 +14,7 @@ async function downloadBadFile() {
   }
   textFile = window.URL.createObjectURL(data);
   var link = document.createElement("a");
-  var name = "badfile.txt";
+  var name = "Feedback.txt";
   link.download = name;
   link.href = textFile;
   link.target = "_blank";
